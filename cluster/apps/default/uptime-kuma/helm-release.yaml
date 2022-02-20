@@ -23,9 +23,10 @@ spec:
     remediation:
       retries: 3
   values:
-    image:
-      repository: ghcr.io/k8s-at-home/uptime-kuma
-      tag: v1.11.1
+    #image:
+    #  repository: ghcr.io/k8s-at-home/uptime-kuma
+    #  tag: v1.11.1
+    #  pullPolicy: IfNotPresent
     ingress:
       main:
         enabled: true
