@@ -4,3 +4,4 @@ resources:
   - echo-server
   - hajimari
   - uptime-kuma
+  - ghost
