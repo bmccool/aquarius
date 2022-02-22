@@ -29,7 +29,7 @@ spec:
       pullPolicy: IfNotPresent
     # See https://ghost.org/docs/config/#running-ghost-with-config-env-variables
     env:
-      url: "http://some-ghost.example.com"
+      url: "http://ghost.brendonmccool.com"
       database__client: mysql
       database__connection__host: ghost-mariadb
       database__connection__user: ghost
@@ -62,11 +62,11 @@ spec:
     # @default -- See values.yaml
     persistence:
       content:
-        enabled: false
+        enabled: true
         mountPath: /var/lib/ghost/content
 
     mariadb:
-      enabled: false
+      enabled: true
       architecture: standalone
       auth:
         database: ghost
@@ -75,4 +75,4 @@ spec:
         rootPassword: ghost-rootpass
       primary:
         persistance:
-          enabled: false
+          enabled: true
