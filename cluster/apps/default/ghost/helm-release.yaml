@@ -25,7 +25,7 @@ spec:
   values:
     image:
       repository: ghost
-      tag: 4.27.2
+      tag: 4.48.9
       pullPolicy: IfNotPresent
     # See https://ghost.org/docs/config/#running-ghost-with-config-env-variables
     env:
